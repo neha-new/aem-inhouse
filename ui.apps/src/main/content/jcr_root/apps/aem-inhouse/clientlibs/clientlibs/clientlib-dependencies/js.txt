@@ -1,2 +1,0 @@
-#base=js
-slick.min.js
