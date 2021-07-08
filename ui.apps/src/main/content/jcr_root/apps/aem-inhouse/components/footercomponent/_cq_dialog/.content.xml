@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
           jcr:primaryType="nt:unstructured"
-          jcr:title="Header Component"
+          jcr:title="Footer Component"
           sling:resourceType="cq/gui/components/authoring/dialog">
     <content
             jcr:primaryType="nt:unstructured"
@@ -24,23 +24,33 @@
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
-                            <logoImagePath
+                            <CopyrightDetails
                                     jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                    fieldLabel="Select the logo image path:"
-                                    name="./logoImagePath"/>
-                            <urlImagePath
-                                   jcr:primaryType="nt:unstructured"
-                                   sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                   fieldLabel="Select the logo image path:"
-                                   name="./urlImagePath"/>
+                                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                    fieldDescription="Sets the description that appears on the profiled person's page."
+                                    fieldLabel="Enter Copyright Details Here: "
+                                    required="true"
+                                    useFixedInlineToolbar="{Boolean}true"
+                                    name="./copyRightDetails">
+                                <rtePlugins jcr:primaryType="nt:unstructured">
+                                    <format
+                                            jcr:primaryType="nt:unstructured"
+                                            features="[bold,italic]"/>
+                                    <justify
+                                            jcr:primaryType="nt:unstructured"
+                                            features="[]"/>
+                                    <lists
+                                            jcr:primaryType="nt:unstructured"
+                                            features="[]"/>
+                                </rtePlugins>
+                            </CopyrightDetails>
                         </items>
                     </column>
                 </items>
             </tab1>
             <tab2
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="Links"
+                    jcr:title="Social Share"
                     sling:resourceType="granite/ui/components/foundation/section">
                 <layout
                         jcr:primaryType="nt:unstructured"
@@ -51,30 +61,42 @@
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
-                            <pagesLink
+                            <socialShareItems
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
                                     composite="{Boolean}true"
-                                    fieldLabel="Pages Link">
+                                    fieldLabel="Social Share">
 
                                 <field
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/container"
-                                        name="./pagesLink">
+                                        name="./socialShareItems">
                                     <items jcr:primaryType="nt:unstructured">
-                                        <name
+                                        <LinkName
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                                fieldLabel="SocialShare Pages"
+                                                name="./LinkName">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <facebook jcr:primaryType="nt:unstructured"
+                                                          text="Facebook"
+                                                          value="fa fa-facebook"/>
+                                                <twitter jcr:primaryType="nt:unstructured"
+                                                         text="Twitter"
+                                                         value="fa fa-twitter"/>
+                                                <googleplus jcr:primaryType="nt:unstructured"
+                                                            text="GooglePlus"
+                                                            value="fa fa-google-plus"/>
+                                            </items>
+                                        </LinkName>
+                                        <LinkURL
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldLabel="Page Name"
-                                                name="PageName"/>
-                                        <link
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
-                                                fieldLabel="Page Link"
-                                                name="PageLinkURL"/>
+                                                fieldLabel="Social Share Link"
+                                                name="LinkURL"/>
                                     </items>
                                 </field>
-                            </pagesLink>
+                            </socialShareItems>
                         </items>
                     </column>
                 </items>

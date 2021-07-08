@@ -2,14 +2,14 @@
 <header>
     <div class="container_12">
         <div class="grid_12">
-            <h1><a href="index.html"><img src="${header.logoImagePath}" alt="Boo House"></a></h1>
+            <h1><a href="${header.urlImagePath}"><img src="${header.logoImagePath}" alt="Boo House"></a></h1>
             <div class="menu_block">
                 <nav id="bt-menu" class="bt-menu">
                     <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
                     <ul>
                         <sly data-sly-list.linkDtoList="${header.linkDtos}">
                             <li class="bt-icon">
-                                <a href=" ${linkDtoList.PageLinkURL}">${linkDtoList.PageName}</a>
+                                <a href="${linkDtoList.linkURL}">${linkDtoList.linkName}</a>
                             </li>
                         </sly>
                     </ul>

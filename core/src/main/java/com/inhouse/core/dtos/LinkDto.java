@@ -1,24 +1,24 @@
 package com.inhouse.core.dtos;
 
 public class LinkDto {
-    private String PageName;
-    private String PageLinkURL;
+    private String linkName;
+    private String linkURL;
 
 
-    public String getPageName() {
-        return PageName;
+    public String getLinkName() {
+        return linkName;
     }
 
-    public void setPageName(String pageName) {
-        PageName = pageName;
+    public void setLinkName(String linkName) {
+        this.linkName = linkName;
     }
 
-    public String getPageLinkURL() {
-        return PageLinkURL;
+    public String getLinkURL() {
+        return linkURL;
     }
 
-    public void setPageLinkURL(String pageLinkURL) {
-        PageLinkURL = pageLinkURL;
+    public void setLinkURL(String linkURL) {
+        this.linkURL = linkURL;
     }
 
 }
