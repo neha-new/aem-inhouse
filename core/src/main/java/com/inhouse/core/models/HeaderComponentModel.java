@@ -51,6 +51,4 @@ public class HeaderComponentModel {
         return logoImagePath;
     }
     public String getUrlImagePath() { return urlImagePath; }
-
-
 }
