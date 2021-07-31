@@ -1,0 +1,28 @@
+<sly data-sly-use.servicesObj="com.inhouse.core.models.OurServicesComponentModel"/>
+<sly data-sly-test="${wcmmode.edit}">
+    <p style="background-color: red">Edit OurServices Component</p>
+</sly>
+<sly data-sly-test.layoutClass="${wcmmode.edit ? '' : 'card-front'}"/>
+<sly data-sly-test.layoutClassBack="${wcmmode.edit ? '' : 'card-back'}"/>
+<sly data-sly-test.layoutClassContent="${wcmmode.edit ? '' : 'all-content'}"/>
+
+    <div class="${layoutClass}">
+        <div class="text2">${servicesObj.subHeadingText}</div>
+        <p>${servicesObj.longDescriptionText}</p>
+    </div>
+    <div class="${layoutClassBack}">
+        <sly data-sly-list.linkDtoObject="${servicesObj.linkDtoList}">
+            <h2><a href="#">${linkDtoObject.buttonName2}</a></h2>
+        </sly>
+    </div>
+    <!-- Content -->
+    <div class="${layoutClassContent}">
+        <div class="text2">${servicesObj.subHeadingText}</div>
+        <p>${servicesObj.longDescriptionText}</p>
+    </div>
+
+
+
+
+
+
