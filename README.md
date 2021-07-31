@@ -2,6 +2,15 @@
 
 This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
 
+> **This project is used for the inhouse training purpose. In the project I have used latest AEM features such as Editable Templates and Experience Fragments.** This project use open source web template which is not responsive.
+
+## Features Developed
+
+-  Custom Template Types and Editable Templates
+- Experience Fragments For Header and Footer
+- Banner and Carousel Component
+- Text and Image component with variations
+
 ## Modules
 
 The main parts of the template are:
@@ -95,7 +104,7 @@ can be found here https://github.com/adobe/aemanalyser-maven-plugin
 
 ### UI tests
 
-They will test the UI layer of your AEM application using Selenium technology. 
+They will test the UI layer of your AEM application using Selenium technology.
 
 To run them locally:
 
