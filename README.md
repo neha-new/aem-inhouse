@@ -11,6 +11,12 @@ This is a project template for AEM-based applications. It is intended as a best-
 - Banner and Carousel Component
 - Text and Image component with variations
 
+ [![Header](https://github.com/neha-new/aem-inhouse/blob/master/ui.content/src/main/content/jcr_root/content/dam/aem-inhouse/header-carousel.JPG)](Header)
+ [![Header](https://github.com/neha-new/aem-inhouse/blob/master/ui.content/src/main/content/jcr_root/content/dam/aem-inhouse/ServiceGrid.JPG)](Header)
+ [![Header](https://github.com/neha-new/aem-inhouse/blob/master/ui.content/src/main/content/jcr_root/content/dam/aem-inhouse/TextNImage.JPG)](Header)
+ [![Header](https://github.com/neha-new/aem-inhouse/blob/master/ui.content/src/main/content/jcr_root/content/dam/aem-inhouse/profile.JPG)](Header)
+
+
 ## Modules
 
 The main parts of the template are:
