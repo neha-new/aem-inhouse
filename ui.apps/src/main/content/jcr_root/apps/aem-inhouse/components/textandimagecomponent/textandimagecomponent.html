@@ -1,4 +1,7 @@
 <sly data-sly-use.textImageObj="com.inhouse.core.models.TextAndImageComponentModel"/>
+<sly data-sly-test="${wcmmode.edit}">
+    <p style="background-color: red">Edit The Text and Image Component</p>
+</sly>
 <sly data-sly-test="${textImageObj.selectVariation == 'variation1'}">
     <h2>${textImageObj.headingText}</h2>
     <sly data-sly-test = "${textImageObj.imageLink}">
