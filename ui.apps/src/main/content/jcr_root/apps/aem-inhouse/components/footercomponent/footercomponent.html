@@ -1,0 +1,18 @@
+<sly data-sly-use.footer="com.inhouse.core.models.FooterComponentModel">
+
+    <footer>
+        <div class="container_12">
+            <div class="grid_12">
+                <div class="socials">
+                    <sly data-sly-list.linkList="${footer.linkDtos}">
+                            <a href="${linkList.linkURL}" class="${linkList.linkName}"></a>
+                    </sly>
+                </div>
+                <div class="clear"></div>
+                <div class="copy">
+                    <sly data-sly-text="${footer.copyRightDetails @context='html'}"></sly>
+                </div>
+            </div>
+        </div>
+    </footer>
+</sly>

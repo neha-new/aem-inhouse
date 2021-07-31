@@ -1,0 +1,10 @@
+<body>
+<sly data-sly-resource="${@path='/content/experience-fragments/aem-inhouse/us/en/site/inhouse-header/master', selectors='content', wcmmode='disabled'}"></sly>
+
+<sly data-sly-use.templatedContainer="com.day.cq.wcm.foundation.TemplatedContainer"
+     data-sly-repeat.child="${templatedContainer.structureResources}"
+     data-sly-resource="${child.path @ resourceType=child.resourceType, decorationTagName='div'}"></sly>
+
+<sly data-sly-resource="${@path='/content/experience-fragments/aem-inhouse/us/en/site/inhouse-footer/master', selectors='content', wcmmode='disabled'}"></sly>
+
+</body>

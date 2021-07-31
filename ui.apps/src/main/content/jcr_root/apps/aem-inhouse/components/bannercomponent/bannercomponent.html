@@ -1,0 +1,14 @@
+<sly data-sly-use.banner= "com.inhouse.core.models.BannerComponentModel"/>
+<sly data-sly-test="${wcmmode.edit}">
+    <p style="background-color: red">Edit The Banner Component</p>
+</sly>
+<div class="slider-section">
+    <div class="slider-content">
+        <div class="slide_cont_container">
+            <div class="slider-header">${banner.headingText}</div>
+            <div class="slider-description">${banner.descriptionText}</div>
+            <a href="${banner.buttonLink}" class="btn">${banner.buttonText}</a>
+        </div>
+    </div>
+    <img src="${banner.imageUpload}">
+</div>

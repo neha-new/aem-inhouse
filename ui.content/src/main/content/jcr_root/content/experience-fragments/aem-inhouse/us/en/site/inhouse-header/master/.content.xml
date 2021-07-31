@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:tags="[]"
+            cq:template="/conf/aem-inhouse/settings/wcm/templates/xf-web-variation"
+            cq:xfMasterVariation="{Boolean}true"
+            cq:xfVariantType="web"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="inhouse-header"
+            sling:resourceType="aem-inhouse/components/xfpage">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-inhouse/components/container"
+                layout="responsiveGrid">
+            <headercomponent
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aem-inhouse/components/headercomponent"
+                    logoImagePath="/content/dam/aem-inhouse/asset.jpg"
+                    urlImagePath="/content/aem-inhouse/us/en">
+                <pagesLink jcr:primaryType="nt:unstructured">
+                    <item0
+                            jcr:primaryType="nt:unstructured"
+                            PageLinkURL="/content/aem-inhouse/us/en/Home"
+                            PageName="Home "/>
+                    <item1
+                            jcr:primaryType="nt:unstructured"
+                            PageLinkURL="/content/aem-inhouse/us/en/Home"
+                            PageName="About "/>
+                    <item2
+                            jcr:primaryType="nt:unstructured"
+                            PageLinkURL="/content/aem-inhouse/us/en/Home"
+                            PageName="Services"/>
+                    <item3
+                            jcr:primaryType="nt:unstructured"
+                            PageLinkURL="/content/aem-inhouse/us/en/Home"
+                            PageName="Projects"/>
+                    <item4
+                            jcr:primaryType="nt:unstructured"
+                            PageLinkURL="/content/aem-inhouse/us/en/Home"
+                            PageName="Blog"/>
+                    <item5
+                            jcr:primaryType="nt:unstructured"
+                            PageLinkURL="/content/aem-inhouse/us/en/Home"
+                            PageName="Contacts"/>
+                </pagesLink>
+            </headercomponent>
+        </root>
+    </jcr:content>
+</jcr:root>
