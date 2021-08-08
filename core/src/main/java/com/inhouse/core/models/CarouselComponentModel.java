@@ -24,11 +24,13 @@ public class CarouselComponentModel {
     @PostConstruct
     protected void init() {
          slides = new ArrayList<>();
-         Integer numOfSlides = Integer.parseInt(numberOfSlides);
-         while (numOfSlides >= 1){
-           slides.add(numOfSlides);
-           numOfSlides--;
-        }
+         if(numberOfSlides != null) {
+             Integer numOfSlides = Integer.parseInt(numberOfSlides);
+             while (numOfSlides >= 1) {
+                 slides.add(numOfSlides);
+                 numOfSlides--;
+             }
+         }
     }
     public String getNumberOfSlides() {
         return numberOfSlides;

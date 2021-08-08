@@ -32,7 +32,7 @@
                             <urlImagePath
                                    jcr:primaryType="nt:unstructured"
                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                   fieldLabel="Select the logo image path:"
+                                   fieldLabel="Select Page Path To Redirect"
                                    name="./urlImagePath"/>
                         </items>
                     </column>

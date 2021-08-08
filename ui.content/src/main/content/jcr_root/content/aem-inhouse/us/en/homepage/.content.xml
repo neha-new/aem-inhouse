@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:template="/conf/aem-inhouse/settings/wcm/templates/home-page-template"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Home Page"
+            sling:resourceType="aem-inhouse/components/homepage">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-inhouse/components/container"
+                layout="responsiveGrid">
+            <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aem-inhouse/components/container"
+                    layout="responsiveGrid">
+                <carouselcomponent
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aem-inhouse/components/carouselcomponent"
+                        numberOfSlides="3">
+                    <carousel2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aem-inhouse/components/bannercomponent"
+                            buttonLink="/content/aem-inhouse/us/en/about-us"
+                            buttonText="Click Here"
+                            descriptionText="this is banner description"
+                            headingText="This is Banner Heading - 2"
+                            imageUpload="/content/dam/aem-inhouse/slide.jpg"/>
+                    <carousel1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aem-inhouse/components/bannercomponent"
+                            buttonLink="/content/aem-inhouse/us/en/services"
+                            buttonText="Click Here"
+                            descriptionText="this is banner description 1"
+                            headingText="This is Banner Heading - 1"
+                            imageUpload="/content/dam/aem-inhouse/slide.jpg"/>
+                    <carousel3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aem-inhouse/components/bannercomponent"
+                            buttonLink="#"
+                            buttonText="Click Here"
+                            descriptionText="This is banner description - 3"
+                            headingText="This is Banner Heading - 3"
+                            imageUpload="/content/dam/aem-inhouse/slide.jpg"/>
+                </carouselcomponent>
+                <servicegridcomponent
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aem-inhouse/components/servicegridcomponent"
+                        buttonLink="/content/aem-inhouse/us/en/projects"
+                        buttonText="More"
+                        headingText="Our Ideas Will Raise Your Business Above the Expected">
+                    <servicesLink jcr:primaryType="nt:unstructured">
+                        <item0
+                                jcr:primaryType="nt:unstructured"
+                                buttonLinkUrl="/content/aem-inhouse/us/en/projects"
+                                buttonName="More"
+                                headingText="Consulting"/>
+                        <item1
+                                jcr:primaryType="nt:unstructured"
+                                buttonLinkUrl="/content/aem-inhouse/us/en/projects"
+                                buttonName="More"
+                                headingText="Development"/>
+                        <item2
+                                jcr:primaryType="nt:unstructured"
+                                buttonLinkUrl="/content/aem-inhouse/us/en/projects"
+                                buttonName="More"
+                                headingText="Analysis"/>
+                        <item3
+                                jcr:primaryType="nt:unstructured"
+                                buttonLinkUrl="/content/aem-inhouse/us/en/projects"
+                                buttonName="More"
+                                headingText="Integration"/>
+                    </servicesLink>
+                </servicegridcomponent>
+                <aboutuscomponent
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceSuperType="foundation/components/form/defaults/field"
+                        sling:resourceType="aem-inhouse/components/aboutuscomponent">
+                    <content0
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/parsys">
+                        <textandimagecomponen
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="aem-inhouse/components/textandimagecomponent"
+                                headingText="Who We Are"
+                                imageLink="/content/dam/aem-inhouse/profile.JPG"
+                                longDescriptionText="In mollis erat mattisy neque facilisis, sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus. &lt;span style=&quot;background-color: transparent;&quot;>Maecenas vehiculaegestas venenatis. Duiser massa elit, auctor pellentesque vel, aliquet amet erat.&lt;/span>"
+                                selectVariation="variation1"
+                                subHeadingLink="/content/aem-inhouse/us/en/services"
+                                subHeadingText="Hom dui erosi laoru adipiscingq id risus sagittis, non consequat feiter milyno"
+                                textIsRich="true"/>
+                    </content0>
+                    <content1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/parsys">
+                        <textandimagecomponen
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="aem-inhouse/components/textandimagecomponent"
+                                headingText="Our History"
+                                selectVariation="variation2"
+                                subHeadingLink="/content/aem-inhouse/us/en/services"
+                                textIsRich="true"/>
+                        <textandimagecomponen_219392374
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="aem-inhouse/components/textandimagecomponent"
+                                longDescriptionText="Ger mollis erat mattisy equelisis, sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis quis malesuada nibh odio ut"
+                                selectVariation="variation2"
+                                subHeadingText="2018 - "
+                                textIsRich="true"/>
+                        <textandimagecomponen_1192898234
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="aem-inhouse/components/textandimagecomponent"
+                                longDescriptionText="Ger mollis erat mattisy equelisis, sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis quis malesuada nibh odio ut"
+                                selectVariation="variation2"
+                                subHeadingText="2019 - "
+                                textIsRich="true"/>
+                        <textandimagecomponen_914572754
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="aem-inhouse/components/textandimagecomponent"
+                                longDescriptionText="Ger mollis erat mattisy equelisis, sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis quis malesuada nibh odio ut"
+                                selectVariation="variation2"
+                                subHeadingText="2020 - "
+                                textIsRich="true"/>
+                        <textandimagecomponen_1704940112
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="aem-inhouse/components/textandimagecomponent"
+                                longDescriptionText="Ger mollis erat mattisy equelisis, sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis quis malesuada nibh odio ut"
+                                selectVariation="variation2"
+                                subHeadingText="2021 - "
+                                textIsRich="true"/>
+                        <textandimagecomponen_890966987
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="aem-inhouse/components/textandimagecomponent"
+                                longDescriptionText="Ger mollis erat mattisy equelisis, sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis quis malesuada nibh odio ut"
+                                selectVariation="variation2"
+                                subHeadingText="2022 - "
+                                textIsRich="true"/>
+                    </content1>
+                    <content2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/parsys">
+                       <textandimagecomponen_866210807
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="aem-inhouse/components/textandimagecomponent"
+                                headingText="Opportunities"
+                                selectVariation="variation1"
+                                textIsRich="true"/>
+                        <textandimagecomponen_218007271
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="aem-inhouse/components/textandimagecomponent"
+                                longDescriptionText="Ger mollis erat mattisy equelisis, sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis quis malesuada nibh odio ut"
+                                selectVariation="variation1"
+                                subHeadingText="In mollis erat mattisy neque facilisis."
+                                textIsRich="true"/>
+                    </content2>
+                </aboutuscomponent>
+                <professionalcomponen
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceSuperType="foundation/components/form/defaults/field"
+                        sling:resourceType="aem-inhouse/components/professionalcomponent"
+                        headingText="Best Professionals">
+                    <content0
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aem-inhouse/components/textandimagecomponent"
+                            imageLink="/content/dam/aem-inhouse/profile.JPG"
+                            longDescriptionText="In mollis erat matt nequemer facilameteserylerarutrum."
+                            selectVariation="variation1"
+                            subHeadingText="Mark Johnson"
+                            textIsRich="true"/>
+                    <content1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aem-inhouse/components/textandimagecomponent"
+                            imageLink="/content/dam/aem-inhouse/profile.JPG"
+                            longDescriptionText="In mollis erat matt nequemer facilameteserylerarutrum."
+                            selectVariation="variation1"
+                            subHeadingText="Ingrid Wood"
+                            textIsRich="true"/>
+                    <content2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aem-inhouse/components/textandimagecomponent"
+                            imageLink="/content/dam/aem-inhouse/profile.JPG"
+                            longDescriptionText="In mollis erat matt nequemer facilameteserylerarutrum."
+                            selectVariation="variation1"
+                            subHeadingText="Linda Smith"
+                            textIsRich="true"/>
+                    <content3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aem-inhouse/components/textandimagecomponent"
+                            imageLink="/content/dam/aem-inhouse/profile.JPG"
+                            longDescriptionText="In mollis erat matt nequemer facilameteserylerarutrum."
+                            selectVariation="variation1"
+                            subHeadingText="Devid Grosh"
+                            textIsRich="true"/>
+                </professionalcomponen>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
