@@ -45,8 +45,7 @@
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="cq/gui/components/authoring/dialog/richtext"
                                     fieldDescription="Sets the description that appears on the profiled person's page."
-                                    fieldLabel="Long Description*"
-                                    required="true"
+                                    fieldLabel="Long Description"
                                     removeSingleParagraphContainer="{Boolean}true"
                                     useFixedInlineToolbar="{Boolean}true"
                                     name="./longDescriptionText">

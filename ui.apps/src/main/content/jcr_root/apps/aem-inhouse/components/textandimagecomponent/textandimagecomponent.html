@@ -3,12 +3,14 @@
     <p style="background-color: red">Edit The Text and Image Component</p>
 </sly>
 <sly data-sly-test="${textImageObj.selectVariation == 'variation1'}">
-    <h2>${textImageObj.headingText}</h2>
+    <sly data-sly-test="${textImageObj.headingText}">
+         <h2>${textImageObj.headingText}</h2>
+    </sly>
     <sly data-sly-test = "${textImageObj.imageLink}">
         <img src="${textImageObj.imageLink}" alt="" class="img_inner">
     </sly>
         <div class="text1 col2"><a href="${textImageObj.subHeadingLink}">${textImageObj.subHeadingText}</a></div>
-        <p>${textImageObj.longDescriptionText}</p>
+        <sly data-sly-text= "${textImageObj.longDescriptionText @ context='html'}"></sly>
      </br>
 </sly>
 <sly data-sly-test="${textImageObj.selectVariation == 'variation2'}">

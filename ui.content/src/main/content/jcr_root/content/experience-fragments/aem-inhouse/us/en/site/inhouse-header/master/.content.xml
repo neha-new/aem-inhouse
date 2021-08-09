@@ -17,32 +17,32 @@
             <headercomponent
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aem-inhouse/components/headercomponent"
-                    logoImagePath="/content/dam/aem-inhouse/asset.jpg"
-                    urlImagePath="/content/aem-inhouse/us/en">
+                    logoImagePath="/content/dam/aem-inhouse/logo.jpg"
+                    urlImagePath="/content/aem-inhouse/us/en/homepage">
                 <pagesLink jcr:primaryType="nt:unstructured">
                     <item0
                             jcr:primaryType="nt:unstructured"
-                            PageLinkURL="/content/aem-inhouse/us/en/Home"
+                            PageLinkURL="/content/aem-inhouse/us/en/homepage"
                             PageName="Home "/>
                     <item1
                             jcr:primaryType="nt:unstructured"
-                            PageLinkURL="/content/aem-inhouse/us/en/Home"
+                            PageLinkURL="/content/aem-inhouse/us/en/about-us"
                             PageName="About "/>
                     <item2
                             jcr:primaryType="nt:unstructured"
-                            PageLinkURL="/content/aem-inhouse/us/en/Home"
+                            PageLinkURL="/content/aem-inhouse/us/en/services"
                             PageName="Services"/>
                     <item3
                             jcr:primaryType="nt:unstructured"
-                            PageLinkURL="/content/aem-inhouse/us/en/Home"
+                            PageLinkURL="/content/aem-inhouse/us/en/projects"
                             PageName="Projects"/>
                     <item4
                             jcr:primaryType="nt:unstructured"
-                            PageLinkURL="/content/aem-inhouse/us/en/Home"
+                            PageLinkURL="/content/aem-inhouse/us/en/blogs"
                             PageName="Blog"/>
                     <item5
                             jcr:primaryType="nt:unstructured"
-                            PageLinkURL="/content/aem-inhouse/us/en/Home"
+                            PageLinkURL="/content/aem-inhouse/us/en/contact"
                             PageName="Contacts"/>
                 </pagesLink>
             </headercomponent>
