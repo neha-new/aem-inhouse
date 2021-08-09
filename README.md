@@ -18,6 +18,12 @@ After building the code, One can open the **homepage.html** to view the develope
 - Banner and Carousel Component
 - Text and Image component with variations
 
+ [![Header](https://github.com/neha-new/aem-inhouse/blob/master/ui.content/src/main/content/jcr_root/content/dam/aem-inhouse/header-carousel.JPG)](Header)
+ [![Header](https://github.com/neha-new/aem-inhouse/blob/master/ui.content/src/main/content/jcr_root/content/dam/aem-inhouse/ServiceGrid.JPG)](Header)
+ [![Header](https://github.com/neha-new/aem-inhouse/blob/master/ui.content/src/main/content/jcr_root/content/dam/aem-inhouse/TextNImage.JPG)](Header)
+ [![Header](https://github.com/neha-new/aem-inhouse/blob/master/ui.content/src/main/content/jcr_root/content/dam/aem-inhouse/profile.JPG)](Header)
+
+
 ## Modules
 
 The main parts of the template are:
